@@ -1,143 +1,183 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <a class="logo link" href="./index.html">Web<span class="logo-colour-header">Studio</span></a>
-      <nav>
-        <ul class="list">
-          <li><a class="navigation current-link" href="./index.html">Studio</a></li>
-          <li><a class="navigation link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="navigation link" href="contacts.html">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="contact-information link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+    <header class="headerBorder">
+      <div class="container header-container">
+        <nav class="nav-container">
+          <a href="" class="link nav-logo-text"
+            >Web<span class="logo-colour-header">Studio</span></a
           >
-        </li>
-        <li><a class="contact-information link" href="tel:+12127724150">+1 212-772-4150</a></li>
-      </ul>
-    </header>
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <h1 class="page-heading">
-          EFFECTIVE SOLUTIONS FOR<br />
-          YOUR BUSINESS
-        </h1>
-        <button class="button button-request" type="button">Request our service</button>
-      </section>
-      <!-- Info Section -->
-      <section>
-        <ul class="goals list">
-          <li>
-            <h3 class="goals-title">ATTENTION TO DETAILS</h3>
-            <p class="goals-details">
-              We go into all the details and processes of your business to develop a customized
-              solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="goals-title">PUNCTUALITY</h3>
-            <p class="goals-details">
-              With us, you can feel safe and secure. An important principle of the company: respect
-              your time and deadlines.
-            </p>
-          </li>
-          <li>
-            <h3 class="goals-title">PLANNING</h3>
-            <p class="goals-details">
-              You will be able to observe and participate in every phase of solution development and
-              implementation.
-            </p>
-          </li>
-          <li>
-            <h3 class="goals-title">MODERN TECHNOLOGIES</h3>
-            <p class="goals-details">
-              We use innovative tools to solve assigned tasks. It's time to simplify work processes.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- What we do -->
-      <section>
-        <h2 class="what-we-do-section">What we do</h2>
-        <ul class="what-we-do-list-images list">
-          <li>
-            <img src="./images/programmer_writting-code.jpg" alt="Programmer writting code" />
-          </li>
-          <li>
-            <img src="./images/researching.jpg" alt="Programmer researching" />
-          </li>
-          <li>
-            <img src="./images/editing.jpg" alt="Editing" />
-          </li>
-        </ul>
-      </section>
-      <!-- Our Team -->
-      <section class="our-team">
-        <h2 class="our-team-section-title">Our Team</h2>
-        <ul class="our-team list">
-          <li>
-            <img src="./images/christopher-w.jpg" alt="Christopher W" width="270" height="260" />
-            <h3 class="member-name">Christopher Walker</h3>
-            <p class="job">Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/kylie-evans.jpg" alt="Kylie Evans" width="270" height="260" />
-            <h3 class="member-name">Kylie Evans</h3>
-            <p class="job">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/ryan-harris.jpg" alt="Ryan Harris" width="270" height="260" />
-            <h3 class="member-name">Ryan Harris</h3>
-            <p class="job">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/tyler-moore.jpg" alt="Tyler Moore" width="270" height="260" />
-            <h3 class="member-name">Tyler Moore</h3>
-            <p class="job">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer-background">
-      <a class="logo link" href="index.html">Web<span class="logo-colour-footer">Studio</span></a>
-      <address>
-        <ul class="footer-contact list">
-          <li>
-            <a
-              href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065/@40.7688994,-73.9650256,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256"
-              target="_blank"
-              class="contact-info-footer link"
-            >
-              695 Park Ave, New York, NY 10065
-              <br />United States
-            </a>
-          </li>
-          <li>
-            <a class="contact-info-footer link" href="mailto:info@devstudio.com"
+          <ul class="list nav-links-list">
+            <li class="nav-links-item">
+              <a class="link nav-links nav-links-current" href="index.html">Studio</a>
+            </li>
+            <li class="nav-links-item">
+              <a class="link nav-links" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-links-item">
+              <a class="link nav-links" href="/">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list nav-contats">
+          <li class="nav-links-item">
+            <a href="mailto:info@devstudio.com" class="link nav-contats-links"
               >info@devstudio.com</a
             >
           </li>
-          <li><a class="contact-info-footer link" href="tel:+12127724150">+1 212-772-4150</a></li>
+          <li class="nav-links-item">
+            <a href="tel:12127724150" class="link nav-contats-links">+1 212-772-4150</a>
+          </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main>
+      <!--hero section-->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-container-text">
+            EFFECTIVE SOLUTIONS FOR <br />
+            YOUR BUSINESS
+          </h1>
+          <button class="hero-container-button" type="button">Request Our Service</button>
+        </div>
+      </section>
+      <!-- Services section -->
+      <section class="section">
+        <div class="container content-container">
+          <ul class="list content-list">
+            <li class="text-container">
+              <h3 class="text-title">ATTENTION TO DETAILS</h3>
+              <p class="text">
+                We go into all the details and processes of your business to develop a customized
+                solution.
+              </p>
+            </li>
+            <li class="text-container">
+              <h3 class="text-title">PUNCTUALITY</h3>
+              <p class="text">
+                With us, you can feel safe and secure. An important principle of the company:
+                respect your time and deadlines.
+              </p>
+            </li>
+            <li class="text-container">
+              <h3 class="text-title">PLANNING</h3>
+              <p class="text">
+                You will be able to observe and participate in every phase of solution development
+                and implementation.
+              </p>
+            </li>
+
+            <li class="text-container">
+              <h3 class="text-title">MODERN TECHNOLOGIES</h3>
+              <p class="text">
+                We use innovative tools to solve assigned tasks. It's time to simplify work
+                processes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- what we do image section-->
+      <section class="section section-padding-top-zero">
+        <div class="container flex-container">
+          <h2 class="title">What we do</h2>
+          <ul class="list what-we-do-lists">
+            <li class="what-we-do-item">
+              <img src="./images/programmer_writting-code.jpg" alt="Programmer writting code" />
+            </li>
+            <li class="what-we-do-item">
+              <img src="./images/researching.jpg" alt="Programmer researching" />
+            </li>
+            <li class="what-we-do-item">
+              <img src="./images/editing.jpg" alt="Editing" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- our team section-->
+      <section class="section our-team-container">
+        <div class="container flex-container">
+          <h2 class="title">Our Team</h2>
+          <ul class="list team-list">
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/christopher-w.jpg"
+                alt="Christopher W"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Christopher Walker</h3>
+              <p class="team-title">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/kylie-evans.jpg"
+                alt="Kylie Evans"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Kylie Evans</h3>
+              <p class="team-title">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/ryan-harris.jpg"
+                alt="Ryan Harris"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ryan Harris</h3>
+              <p class="team-title">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img
+                class="team-img"
+                src="./images/tyler-moore.jpg"
+                alt="Tyler Moore"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Tyler Moore</h3>
+              <p class="team-title">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container-footer">
+        <a href="" class="link nav-logo-text footer-logo"
+          >Web<span class="logo-colour-footer">Studio</span></a
+        >
+        <address>
+          <ul class="list">
+            <li>
+              <a href="" class="link footer-contacts"
+                >695 Park Ave, New York, NY 10065,<br />
+                United States</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="link footer-contacts">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+1 212-772-4150" class="link footer-contacts"> +1 212-772-4150</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
